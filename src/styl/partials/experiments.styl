@@ -1,0 +1,57 @@
+// EXPERIMENTS
+
+.experiments
+  position relative
+  max-width 640px
+  margin 24px auto 0
+  padding 16px 18px
+  h1
+    padding 0 4px
+    @media $tablet
+      font-size 1.750rem
+  h4
+    margin-bottom 0
+  li
+    margin-top 20px
+    border-left 1px solid lime
+    a
+      display block
+      text-decoration none
+      &:hover
+        background-color lime
+        .info-title
+        .info-desc
+          color #000000
+  .title
+    span
+      color #000000
+      background-color lime
+  .about
+    text-align center
+    margin 10px 0
+  .about-button
+    display inline-block
+    color lime
+    text-decoration underline
+    cursor pointer
+  .info
+    padding 0 14px
+    p
+      no-margin()
+    @media $tablet
+      h4
+        font-size 1.125rem
+  .info-title
+    color lime
+    text-decoration underline
+  .info-desc
+    color white
+  .locale-changer
+    position absolute
+    right 18px
+    select
+      color $white
+      background-color #000000
+      border 1px solid $white
+  @media $phone
+    padding 0 12px
