@@ -13,6 +13,6 @@
   "scripts": {
     "dev": "poi",
     "build": "poi build",
-    "deploy": "npm run build && gh-pages -d dist -b master"
+    "deploy": "npm run build && touch dist/CNAME && echo 'squishy.cat' >> dist/CNAME && gh-pages -d dist -b master"
   }
 }
